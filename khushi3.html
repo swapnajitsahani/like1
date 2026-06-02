@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Memories ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="memories-page">
+
+<!-- Background Music -->
+<audio autoplay loop controls class="music-player">
+    <source src="music/love-song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Floating Hearts -->
+<div id="memory-hearts"></div>
+
+<div class="memory-container">
+
+    <h1>❤️ Our Beautiful Memories ❤️</h1>
+
+    <p class="memory-subtitle">
+        Every picture tells a story, every memory holds a special place in my heart.whenever you are near me its feel me like heaven.No memory can ever match with this mwmories.These are the best moments for me till die.
+    </p>
+
+    <!-- Photo Gallery -->
+    <div class="gallery">
+
+        <div class="photo-card">
+            <img src="photo1.jpeg" alt="">
+        </div>
+
+        <div class="photo-card">
+            <img src="photo2.jpeg" alt="">
+        </div>
+
+        <div class="photo-card">
+            <img src="photo3.jpeg" alt="">
+        </div>
+
+        <div class="photo-card">
+            <img src="photo4.jpeg" alt="">
+        </div>
+
+        <div class="photo-card">
+            <img src="photo5.jpeg" alt="">
+        </div>
+
+        <div class="photo-card">
+            <img src="photo6.jpeg" alt="">
+        </div>
+
+    </div>
+
+    <div class="final-message">
+
+        <h2>💖 My Happiness 💖</h2>
+
+        <p>
+            These memories are the most precious treasures of my life.
+            Thank you for filling my life with love, happiness, and countless beautiful moments.
+        </p>
+
+        <p>
+            Happy 4th Anniversary ❤️
+        </p>
+
+        <h3>
+            Forever Yours,<br>
+            ❤️ Kanhu ❤️
+        </h3>
+
+    </div>
+
+</div>
+
+<script>
+
+for(let i=0;i<50;i++){
+
+    let heart=document.createElement("div");
+
+    heart.classList.add("memory-heart");
+
+    heart.innerHTML="❤️";
+
+    heart.style.left=Math.random()*100+"vw";
+
+    heart.style.animationDuration=
+    (Math.random()*6+5)+"s";
+
+    heart.style.fontSize=
+    (Math.random()*20+15)+"px";
+
+    heart.style.animationDelay=
+    Math.random()*5+"s";
+
+    document.getElementById("memory-hearts")
+    .appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
+```
